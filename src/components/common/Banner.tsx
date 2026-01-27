@@ -21,7 +21,6 @@ const Banner = () => {
       <MaxWidth className="relative z-10 h-full">
         <div className="flex h-full items-center">
           <div className="max-w-3xl space-y-[2rem] text-white">
-
             {/* Label */}
             <span
               className={`text-sm md:text-base uppercase tracking-widest block
@@ -33,7 +32,7 @@ const Banner = () => {
 
             {/* Heading */}
             <h1
-              className={`capitalize text-4xl md:text-[70px] font-bold leading-tight
+              className={`capitalize text-4xl md:text-[60px] font-bold leading-tight
               transition-all duration-700 delay-150
               ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}
             >
@@ -61,7 +60,6 @@ const Banner = () => {
                 is2button={true}
               />
             </div>
-
           </div>
         </div>
       </MaxWidth>
