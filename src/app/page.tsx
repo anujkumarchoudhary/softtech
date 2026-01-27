@@ -12,7 +12,7 @@ import Pricing from "../components/Pricing";
 import DedicatedSupport from "../components/DedicatedSupport";
 import Feedback from "../components/Feedback";
 import Blog from "../components/Blog";
-
+//test
 const page = () => {
   return (
     <div>
