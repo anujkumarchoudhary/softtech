@@ -7,7 +7,7 @@ export interface HeadingProps {
   heading: string;
   isHeadingH1?: boolean;
   description?: string;
-  label: string;
+  label?: string;
   isCenter?: boolean;
   className?: string;
   textColor?: string;
@@ -54,7 +54,7 @@ const Heading = ({
       )}
 
       <p
-        className={`mt-4 text-[${textColor || "#000000"}] ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}
+        className={`mt- text-[${textColor || "#000000"}] ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}
       >
         {description}
       </p>

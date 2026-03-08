@@ -1,24 +1,28 @@
 import Heading from "@/src/components/common/Heading";
 import ContactForm from "@/src/components/form/ContactForm";
 import MaxWidth from "@/src/components/layout/MaxWidth";
+import { staticData } from "@/src/utills/Data";
 import Image from "next/image";
 import React from "react";
 
 const Page = () => {
+  const { label, heading, description, data } = staticData?.contact;
   return (
-    <MaxWidth className="py-16 grid grid-cols-1 lg:grid-cols-2 gap-[2rem]">
-      <div>
-        <Heading
-          heading={"Get Information & Lets Get In Touch With Our Team"}
-          label={"Stay Tuned With us"}
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo."
-        />
-        <div>
-          d
-          <span>
-            <h5>Head Office Address</h5>
-            <p>Lumbung Hidup St. 42 East java Madiun Cituy 10000</p>
-          </span>
+    <MaxWidth className="py-16 grid grid-cols-1 lg:grid-cols-2 gap-[4rem]">
+      <div className="my-auto">
+        <Heading heading={heading} label={label} description={description} />
+        <div className="pt-[2rem]">
+          {data?.map((item, idx: number) => {
+            return (
+              <div className="flex gap-2 space-y-[2rem]">
+                {item?.icon}
+                <span>
+                  <h5>{item?.title}</h5>
+                  <p>{item?.description}</p>
+                </span>
+              </div>
+            );
+          })}
         </div>
       </div>
       <ContactForm />

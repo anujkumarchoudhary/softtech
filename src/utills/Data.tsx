@@ -10,6 +10,8 @@ import feedback02 from "../../public/images/software-developer-at-office.jpg";
 import feedback03 from "../../public/images/software-developer-at-office.jpg";
 import { PiClockCounterClockwiseFill } from "react-icons/pi";
 import { TbClock24 } from "react-icons/tb";
+import { FaMapLocationDot, FaHeadphonesSimple } from "react-icons/fa6";
+import { IoIosMailOpen } from "react-icons/io";
 
 type SupportItem = {
   icon: React.ReactNode;
@@ -221,5 +223,29 @@ export const staticData = {
         },
       ],
     },
+  },
+  contact: {
+    label: "Stay Tuned With us",
+    heading: "Get Information & Lets Get In Touch With Our Team",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.",
+    button: "Send Message",
+    data: [
+      {
+        icon: <FaMapLocationDot size={40} />,
+        title: "Head Office Address",
+        description: "Lumbung Hidup St. 42 East java Madiun Cituy 10000",
+      },
+      {
+        icon: <IoIosMailOpen size={40} />,
+        title: "Email Address",
+        description: "info@softtech.com",
+      },
+      {
+        icon: <FaHeadphonesSimple size={40} />,
+        title: "Office Hour",
+        description: "Monday - Friday, 9:00 AM - 6:00 PM",
+      },
+    ],
   },
 };

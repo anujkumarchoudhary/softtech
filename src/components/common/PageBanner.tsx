@@ -6,7 +6,12 @@ import MaxWidth from "../layout/MaxWidth";
 import Button from "./Button";
 import { useInViewOnce } from "@/src/hooks/useInViewOnce";
 
-const PageBanner = () => {
+export interface PageBannerProps {
+  label: string;
+  heading: string;
+  description: string;
+}
+const PageBanner = ({ label, heading, description }: PageBannerProps) => {
   const { ref, isVisible } = useInViewOnce<HTMLDivElement>(0.3);
 
   return (
@@ -27,9 +32,9 @@ const PageBanner = () => {
               transition-all duration-700 delay-150
               ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}
             >
-              About Us
+              {heading}
             </h1>
-            <p className="uppercase font-bold">{`Home > About`}</p>
+            <p className="uppercase font-bold">{`Home > ${label}`}</p>
           </div>
         </div>
       </MaxWidth>

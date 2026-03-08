@@ -10,7 +10,7 @@ import OurVision from "@/src/components/OurVision";
 const Page = () => {
   return (
     <div>
-      <PageBanner />
+      <PageBanner label={""} heading={"About"} description={""} />
       <About />
       <OurVision />
       <DedicatedSupport />
