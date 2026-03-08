@@ -11,8 +11,8 @@ const Footer = () => {
     <div className="bg-[#001845]">
       <MaxWidth className="grid grid-cols-4 gap-[2rem] py-[6rem] text-white">
         <div className="">
-          <h2 className="text-[2rem] font-bold">SoftTech</h2>
-          <p>
+          <h2 className="text-[2rem] text-[#FFFFFF] font-bold">SoftTech</h2>
+          <p className="text-[#FFFFFF]">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
             tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
           </p>
@@ -22,32 +22,26 @@ const Footer = () => {
           <div className="grid grid-cols-2 gap-x-20">
             {/* Left column */}
             <div className="space-y-2">
-              <h2 className="text-[1.25rem] font-bold mb-4">Quick Link</h2>
+              <h2 className="text-[1.25rem] font-bold mb-4 text-[#FFFFFF]">
+                Quick Link
+              </h2>
               {footerMenuData.slice(0, 5).map((menu, idx) => (
-                <div
-                  key={idx}
-                  className="flex gap-1 uppercase cursor-pointer"
-                >
+                <div key={idx} className="flex gap-1 uppercase cursor-pointer">
                   <IoIosArrowForward className="my-auto" />
-                  <p>
-                    <span className="my-auto">{menu.title}</span>
-                  </p>
+                  <span className="my-auto">{menu.title}</span>
                 </div>
               ))}
             </div>
 
             {/* Right column */}
             <div className="space-y-2">
-              <h2 className="text-[1.25rem] font-bold mb-4">Quick Link</h2>
+              <h2 className="text-[1.25rem] font-bold mb-4 text-[#FFFFFF]">
+                Quick Link
+              </h2>
               {footerMenuData.slice(5).map((menu, idx) => (
-                <div
-                  key={idx}
-                  className="flex gap-1 uppercase cursor-pointer"
-                >
+                <div key={idx} className="flex gap-1 uppercase cursor-pointer">
                   <IoIosArrowForward className="my-auto" />
-                  <p>
-                    <span className="my-auto">{menu.title}</span>
-                  </p>
+                  <span className="my-auto ">{menu.title}</span>
                 </div>
               ))}
             </div>
@@ -55,10 +49,16 @@ const Footer = () => {
         </div>
 
         <div className="">
-          <h2 className="text-[1.25rem] font-bold">Head Office Address</h2>
-          <p>Lumbung Hidup St 425 East Java Madiun City Block ABC 123</p>
-          <h2 className="text-[1.25rem] pt-2 font-bold">Days Open</h2>
-          <p>Monday - Friday 08 AM - 10 PM</p>
+          <h2 className="text-[1.25rem] font-bold text-[#FFFFFF]">
+            Head Office Address
+          </h2>
+          <p className="text-[#FFFFFF]">
+            Lumbung Hidup St 425 East Java Madiun City Block ABC 123
+          </p>
+          <h2 className="text-[1.25rem] pt-2 font-bold text-[#FFFFFF]">
+            Days Open
+          </h2>
+          <p className="text-[#FFFFFF]">Monday - Friday 08 AM - 10 PM</p>
         </div>
       </MaxWidth>
     </div>

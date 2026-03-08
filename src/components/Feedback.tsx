@@ -7,6 +7,7 @@ import { FaStar } from "react-icons/fa";
 import Image from "next/image";
 import img from "../../public/images/software-developer-at-office.jpg";
 import { useInViewOnce } from "@/src/hooks/useInViewOnce";
+import { staticData } from "../utills/Data";
 
 const data = [
   {
@@ -35,11 +36,11 @@ const data = [
 const Feedback = () => {
   const [active, setActive] = useState(1);
   const { ref, isVisible } = useInViewOnce<HTMLDivElement>(0.3);
+  const { heading, label, data } = staticData.home?.feedbacks || {};
 
   return (
     <section ref={ref} className="py-[6rem] bg-[#F9F9F9]">
       <MaxWidth>
-
         {/* HEADING */}
         <div
           className={`transition-all duration-1000
@@ -47,19 +48,19 @@ const Feedback = () => {
         >
           <Heading
             isCenter
-            heading="We provide our clients with the most innovative and effective"
-            label="Client Feedback"
+            heading={heading}
+            label={label}
             className="w-[60%] mx-auto"
           />
         </div>
 
         {/* FEEDBACK CARDS */}
-        <div className="mt-6 grid md:grid-cols-3 gap-8">
+        <div className="mt-[1rem] grid md:grid-cols-3 gap-8">
           {data.map((item, index) => (
             <div
               key={index}
               style={{ transitionDelay: `${300 + index * 150}ms` }}
-              className={`mt-10 p-8 bg-[#001845] text-[#FFFFFF]
+              className={`mt-[1rem] p-8 bg-[#001845] text-[#FFFFFF]
               transition-all duration-1000
               ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-16"}`}
             >
@@ -69,21 +70,21 @@ const Feedback = () => {
                 ))}
               </div>
 
-              <p className="mb-4 italic font-semibold">
-                "{item.feedback}"
+              <p className="mb-4 italic font-semibold text-[#FFFFFF]">
+                "{item.message}"
               </p>
 
               <div className="flex gap-4">
                 <Image
-                  src={item.image}
+                  src={item.img}
                   alt={item.name}
-                  width={50}
+                  width={60}
                   height={50}
                   className="rounded-full"
                 />
                 <div>
-                  <h4 className="font-bold">{item.name}</h4>
-                  <span className="text-sm">{item.designation}</span>
+                  <h4 className="font-bold text-[#FFFFFF]">{item.name}</h4>
+                  <span className="text-sm ">{item.designation}</span>
                 </div>
               </div>
             </div>
@@ -110,7 +111,6 @@ const Feedback = () => {
             />
           ))}
         </div>
-
       </MaxWidth>
     </section>
   );

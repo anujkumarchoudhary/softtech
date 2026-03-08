@@ -23,7 +23,7 @@ const PageBanner = () => {
           <div className="max-w-3xl space-y-[2rem] text-white">
             {/* Heading */}
             <h1
-              className={`capitalize text-4xl md:text-[70px] font-bold
+              className={`capitalize  text-[#FFFFFF]
               transition-all duration-700 delay-150
               ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}
             >

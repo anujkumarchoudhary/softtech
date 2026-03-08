@@ -14,12 +14,12 @@ const Header = () => {
       <MaxWidth className="flex justify-between h-[10vh] items-center py-4 text-white">
         <div>
           {/* <Image src={logo} width={200} height={40} alt="logo" /> */}
-          <h1
+          <h2
             onClick={() => router.push("/")}
-            className="cursor-pointer capitalize text-4xl md:text-[40px] font-bold leading-tight"
+            className="cursor-pointer text-[40px] capitalize text-[#FFFFFF]"
           >
             SoftTech
-          </h1>
+          </h2>
         </div>
         <div>
           {menuData?.map((menu, idx) => {
@@ -35,7 +35,7 @@ const Header = () => {
           })}
         </div>
         <div className="flex gap-8">
-          <p className="cursor-pointer font-bold my-auto">+91: 9953176985</p>
+          <p className="cursor-pointer text-[#FFFFFF] font-bold my-auto">+91: 9953176985</p>
           <Button name="Get a Quote" />
         </div>
       </MaxWidth>

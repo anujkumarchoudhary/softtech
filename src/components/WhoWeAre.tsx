@@ -6,41 +6,23 @@ import Heading from "./common/Heading";
 import img from "../../public/images/whowe.jpg";
 import Image from "next/image";
 import { useInViewOnce } from "@/src/hooks/useInViewOnce";
-
-const data = [
-  {
-    title: "15 Years Experience",
-    description: "Lorem ipsum dolor sit amet consectetur",
-  },
-  {
-    title: "Best Certification Team",
-    description: "Lorem ipsum dolor sit amet consectetur",
-  },
-  {
-    title: "Unlimited Revision",
-    description: "Lorem ipsum dolor sit amet consectetur",
-  },
-];
+import { staticData } from "../utills/Data";
 
 const WhoWeAre = () => {
   const { ref, isVisible } = useInViewOnce<HTMLDivElement>(0.3);
+  const { label, heading, description, data } = staticData.home?.whoWeAre;
 
   return (
     <section ref={ref} className="bg-[#F9F9F9]">
       <MaxWidth className="grid grid-cols-3 gap-2 py-[6rem]">
-
         {/* LEFT CONTENT */}
         <div
           className={`col-span-2 my-auto transition-all duration-1000
           ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-16"}`}
         >
-          <Heading
-            label="Who We Are"
-            heading="we specialize in providing tailor-made software solutions Custom Needed"
-          />
+          <Heading label={label} heading={heading} />
 
           <div className="grid grid-cols-2 gap-[4rem]">
-
             {/* Overview Card */}
             <div
               className={`space-y-5 bg-white p-[3rem] border-[0.4rem]
@@ -53,16 +35,10 @@ const WhoWeAre = () => {
                 <h3 className="text-[1.6rem] font-bold">Overview</h3>
               </div>
 
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore
-              </p>
-
-              <p>
-                Duis aute irure dolor in reprehenderit in voluptate velit esse
-                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                cupidatat non proident
-              </p>
+              {/* Description */}
+              {description?.map((item, idx) => (
+                <p key={idx}>{item}</p>
+              ))}
             </div>
 
             {/* Feature List */}
@@ -76,13 +52,12 @@ const WhoWeAre = () => {
                 >
                   <span className="bg-[#0466C8] w-1.5 h-12 my-auto" />
                   <div>
-                    <h3 className="text-[1.3rem] font-bold">{item.title}</h3>
+                    <h3 className="text-[1.3rem] font-bold">{item.name}</h3>
                     <p>{item.description}</p>
                   </div>
                 </div>
               ))}
             </div>
-
           </div>
         </div>
 
@@ -93,7 +68,6 @@ const WhoWeAre = () => {
         >
           <Image src={img} alt="Who we are" />
         </div>
-
       </MaxWidth>
     </section>
   );

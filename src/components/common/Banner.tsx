@@ -5,9 +5,11 @@ import img from "../../../public/images/software-developer-at-office.jpg";
 import MaxWidth from "../layout/MaxWidth";
 import Button from "./Button";
 import { useInViewOnce } from "@/src/hooks/useInViewOnce";
+import { staticData } from "@/src/utills/Data";
 
 const Banner = () => {
   const { ref, isVisible } = useInViewOnce<HTMLDivElement>(0.3);
+  const { label, heading, description, button, button2 } = staticData?.home?.banner;
 
   return (
     <section ref={ref} className="relative h-screen w-full overflow-hidden">
@@ -27,16 +29,16 @@ const Banner = () => {
               transition-all duration-700
               ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}
             >
-              Custom Software Development
+              {label}
             </span>
 
             {/* Heading */}
             <h1
-              className={`capitalize text-4xl md:text-[60px] font-bold leading-tight
+              className={`text-[#FFFFFF] capitalize
               transition-all duration-700 delay-150
               ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}
             >
-              specialize in providing custom software solutions unique needs
+              {heading}
             </h1>
 
             {/* Description */}
@@ -45,8 +47,7 @@ const Banner = () => {
               transition-all duration-700 delay-300
               ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}
             >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
-              tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+              {description}
             </p>
 
             {/* Buttons */}
@@ -54,11 +55,7 @@ const Banner = () => {
               className={`flex gap-4 transition-all duration-700 delay-500
               ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}
             >
-              <Button
-                name="Get a Quote"
-                name2="See Projects"
-                is2button={true}
-              />
+              <Button name={button} name2={button2} is2button={true} />
             </div>
           </div>
         </div>

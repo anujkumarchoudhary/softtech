@@ -11,15 +11,16 @@ import { PiClockCounterClockwiseFill } from "react-icons/pi";
 import { SlSettings } from "react-icons/sl";
 import Heading from "./common/Heading";
 import { useInViewOnce } from "@/src/hooks/useInViewOnce";
+import { staticData } from "../utills/Data";
 
 const About = () => {
   const users = [about3, about3, about3];
   const { ref, isVisible } = useInViewOnce<HTMLDivElement>(0.3);
+  const { label, heading, description } = staticData.home.aboutUs;
 
   return (
     <section ref={ref}>
       <MaxWidth className="grid grid-cols-2 gap-[4rem] py-[6rem]">
-
         {/* LEFT SIDE (Images) */}
         <div
           className={`relative transition-all duration-1000
@@ -61,11 +62,7 @@ const About = () => {
           className={`my-auto transition-all duration-1000 delay-200
           ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-16"}`}
         >
-          <Heading
-            label="About Us"
-            heading="Welcome to our custom software development service For Any Needs"
-            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo."
-          />
+          <Heading label={label} heading={heading} description={description} />
 
           <div className="flex gap-4 py-6">
             <span className="w-2 h-12 bg-[#001845]" />
@@ -76,10 +73,7 @@ const About = () => {
           </div>
 
           <div className="flex gap-4 py-6">
-            <PiClockCounterClockwiseFill
-              size={54}
-              className="text-[#001845]"
-            />
+            <PiClockCounterClockwiseFill size={54} className="text-[#001845]" />
             <div>
               <h3 className="text-[1.25rem] font-bold">
                 We Offer Unlimited Revision
@@ -108,9 +102,7 @@ const About = () => {
               ))}
             </div>
 
-            <p className="text-5xl font-extrabold text-[#001845]">
-              1,235 +
-            </p>
+            <p className="text-5xl font-extrabold text-[#001845]">1,235 +</p>
 
             <div className="my-auto">
               <h3 className="text-[1.25rem] font-bold text-[#001845]">
@@ -120,7 +112,6 @@ const About = () => {
             </div>
           </div>
         </div>
-
       </MaxWidth>
     </section>
   );

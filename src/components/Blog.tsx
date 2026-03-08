@@ -8,6 +8,7 @@ import blog2 from "../../public/images/blog2.jpg";
 import blog3 from "../../public/images/blog3.jpg";
 import Image from "next/image";
 import { useInViewOnce } from "@/src/hooks/useInViewOnce";
+import Button from "./common/Button";
 
 const data = [
   {
@@ -105,15 +106,14 @@ const Blog = () => {
               </div>
 
               {/* CONTENT */}
-              <div className="p-[3rem]">
-                <h3 className="text-[1.65rem] font-bold mt-2">{item.title}</h3>
-                <p className="mt-4">{item.description}</p>
-                <a
+              <div className="px-[2.5rem] pt-[2rem] pb-[2.5rem]">
+                <h4 className="text-[#FFFFFF] mt-2">{item.title}</h4>
+                <p className="my-4 text-[#FFFFFF]">{item.description}</p>
+                <Button
                   href={item.link}
-                  className="mt-4 inline-block text-blue-400 hover:underline font-semibold"
-                >
-                  Read More
-                </a>
+                  name="Read More"
+                  className="mt-4 inline-block text-blue-400 hover:underline font-semibold"   />
+
               </div>
             </div>
           ))}

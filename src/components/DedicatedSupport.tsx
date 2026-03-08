@@ -7,39 +7,23 @@ import Image from "next/image";
 import { IoPlaySharp } from "react-icons/io5";
 import img2 from "../../public/images/software-developer-at-office.jpg";
 import img1 from "../../public/images/dedicatedsupport.jpg";
-import { PiClockCounterClockwiseFill } from "react-icons/pi";
 import { TbClock24 } from "react-icons/tb";
 import { useInViewOnce } from "@/src/hooks/useInViewOnce";
-
-const data = [
-  {
-    icon: <TbClock24 size={54} />,
-    title: "24 Hours Support",
-    desc: "Lorem ipsum dolor sit amet consectetur",
-  },
-  {
-    icon: <PiClockCounterClockwiseFill size={54} />,
-    title: "Unlimited Revision",
-    desc: "Lorem ipsum dolor sit amet consectetur",
-  },
-];
+import { staticData } from "../utills/Data";
 
 const DedicatedSupport = () => {
   const { ref, isVisible } = useInViewOnce<HTMLDivElement>(0.3);
+  const { label, heading, data } = staticData.home.dedicatedSupport;
 
   return (
     <section ref={ref} className="py-[6rem]">
       <MaxWidth className="grid grid-cols-2 gap-[4rem]">
-
         {/* LEFT SIDE */}
         <div
           className={`transition-all duration-1000
           ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-12"}`}
         >
-          <Heading
-            heading="We provide dedicated support throughout the development process and beyond"
-            label="Dedicated Support"
-          />
+          <Heading heading={heading} label={label} />
 
           <div
             className={`relative pt-[2rem] transition-all duration-1000 delay-200
@@ -71,7 +55,7 @@ const DedicatedSupport = () => {
 
           {/* SUPPORT BOX */}
           <div
-            className={`absolute w-[90%] grid grid-cols-2 gap-[2rem]
+            className={`absolute w-full grid grid-cols-2 gap-[2rem]
             top-[120%] left-[-25%] bg-[#001845] text-[#FFFFFF] p-[2rem]
             transition-all duration-1000 delay-650
             ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-12"}`}
@@ -83,17 +67,18 @@ const DedicatedSupport = () => {
                 className="flex items-center gap-4"
               >
                 <div className="bg-[#001845] mb-6 p-3 rounded-full">
-                  {item.icon}
+                  <TbClock24 size={54} />
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold">{item.title}</h3>
+                  <h3 className="text-xl text-[#FFFFFF] font-bold">
+                    {item.title}
+                  </h3>
                   <p className="text-gray-500">{item.desc}</p>
                 </div>
               </div>
             ))}
           </div>
         </div>
-
       </MaxWidth>
     </section>
   );
