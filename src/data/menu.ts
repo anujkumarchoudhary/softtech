@@ -1,6 +1,6 @@
 export const menuData = [
   { title: "About", link: "/about" },
-  { title: "Services", link: "/services" },
+  { title: "Services", link: "/service" },
   { title: "Blog", link: "/blog" },
   { title: "Portfolio", link: "/portfolio" },
   { title: "Pricing", link: "/pricing" },

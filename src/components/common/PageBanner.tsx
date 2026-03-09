@@ -1,21 +1,20 @@
 "use client";
 
 import Image from "next/image";
-import img from "../../../public/images/software-developer-at-office.jpg";
+import img from "../../../public/images/skill2.jpg";
 import MaxWidth from "../layout/MaxWidth";
 import Button from "./Button";
 import { useInViewOnce } from "@/src/hooks/useInViewOnce";
 
 export interface PageBannerProps {
-  label: string;
   heading: string;
   description: string;
 }
-const PageBanner = ({ label, heading, description }: PageBannerProps) => {
+const PageBanner = ({ heading, description }: PageBannerProps) => {
   const { ref, isVisible } = useInViewOnce<HTMLDivElement>(0.3);
 
   return (
-    <section ref={ref} className="relative h-[35vh] w-full overflow-hidden">
+    <section ref={ref} className="relative h-[45vh] w-full overflow-hidden">
       {/* Background Image */}
       <Image src={img} alt="Banner" fill priority className="object-cover" />
 
@@ -34,7 +33,7 @@ const PageBanner = ({ label, heading, description }: PageBannerProps) => {
             >
               {heading}
             </h1>
-            <p className="uppercase font-bold">{`Home > ${label}`}</p>
+            <p className="uppercase font-bold">{`Home > ${heading}`}</p>
           </div>
         </div>
       </MaxWidth>

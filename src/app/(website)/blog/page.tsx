@@ -10,7 +10,7 @@ import React from "react";
 function page() {
   return (
     <div>
-      <PageBanner label={"Blog"} heading={"Blog"} description={""} />
+      <PageBanner heading={"Blog"} description={""} />
       <Blog/>
       <LetsStart />
     </div>

@@ -4,6 +4,9 @@ import client_03 from "../../public/images/clients/logoipsum-286-1.png";
 import client_04 from "../../public/images/clients/logoipsum-286-1.png";
 import client_05 from "../../public/images/clients/logoipsum-286-1.png";
 import client_06 from "../../public/images/clients/logoipsum-286-1.png";
+//card img
+import card_img_01 from "../../public/images/work-5224077_1920.jpg";
+import card_img_02 from "../../public/images/vision.jpg";
 //feedback data
 import feedback01 from "../../public/images/software-developer-at-office.jpg";
 import feedback02 from "../../public/images/software-developer-at-office.jpg";
@@ -70,14 +73,14 @@ export const staticData = {
       data: [
         {
           icon: "",
-          name: "Software Ideas",
+          name: "Web Development",
           description:
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
           button: "Learn More",
         },
         {
           icon: "",
-          name: "Software Security",
+          name: "App Development",
           description:
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
           button: "Learn More",
@@ -91,7 +94,7 @@ export const staticData = {
         },
         {
           icon: "",
-          name: "Point Of Sales",
+          name: "CRM Software",
           description:
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
           button: "Learn More",
@@ -247,5 +250,56 @@ export const staticData = {
         description: "Monday - Friday, 9:00 AM - 6:00 PM",
       },
     ],
+  },
+  serviceDetails: {
+    pointOfService: {
+      title:
+        "Point Of Sales Customization Software Development Web Based Service",
+      description: [
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      ],
+      list: [
+        "Lorem ipsum dolor sit amet, consectetur adipiscing",
+        "Lorem ipsum dolor sit amet, consectetur",
+      ],
+    },
+    weCreate: {
+      title:
+        "We create a detailed design of the software including user interface functionality",
+      description: [
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      ],
+      list: [
+        "Lorem ipsum dolor sit amet, consectetur adipiscing",
+        "Lorem ipsum dolor sit amet, consectetur",
+      ],
+      cardData: [
+        {
+          title: "UI UX Design",
+          description:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        },
+        {
+          title: "Development Proccess",
+          description:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        },
+      ],
+      cardImges: [card_img_01, card_img_02],
+    },
+    teamWork: {
+      label: "Dedicated Team Work",
+      title:
+        "We're excited to Give The Best Work Result For Your Projects Work With us",
+      description: [
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.",
+      ],
+      list: [
+        "Lorem ipsum dolor sit amet, consectetur adipiscing",
+        "Lorem ipsum dolor sit amet, consectetur",
+      ],
+    },
   },
 };

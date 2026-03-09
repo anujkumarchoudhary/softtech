@@ -45,7 +45,7 @@ const WhatWeDo = () => {
 
               <div className="flex gap-2 justify-center">
                 <a
-                  // href={item.link}
+                  href={"/service/details"}
                   className="text-[#001845] font-semibold my-auto"
                 >
                   Learn More
