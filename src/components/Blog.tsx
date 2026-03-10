@@ -9,6 +9,7 @@ import blog3 from "../../public/images/blog3.jpg";
 import Image from "next/image";
 import { useInViewOnce } from "@/src/hooks/useInViewOnce";
 import Button from "./common/Button";
+import { useRouter } from "next/navigation";
 
 const data = [
   {
@@ -44,6 +45,7 @@ const data = [
 ];
 
 const Blog = () => {
+  const router = useRouter();
   const { ref, isVisible } = useInViewOnce<HTMLDivElement>(0.3);
 
   return (
@@ -110,10 +112,10 @@ const Blog = () => {
                 <h4 className="text-[#FFFFFF] mt-2">{item.title}</h4>
                 <p className="my-4 text-[#FFFFFF]">{item.description}</p>
                 <Button
-                  href={item.link}
+                  handleClick={() => router.push(item.link)}
                   name="Read More"
-                  className="mt-4 inline-block text-blue-400 hover:underline font-semibold"   />
-
+                  className="mt-4 inline-block text-blue-400 font-semibold"
+                />
               </div>
             </div>
           ))}
