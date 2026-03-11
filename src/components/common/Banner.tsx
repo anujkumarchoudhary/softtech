@@ -12,9 +12,9 @@ const Banner = () => {
   const { label, heading, description, button, button2 } = staticData?.home?.banner;
 
   return (
-    <section ref={ref} className="relative h-screen w-full overflow-hidden">
+    <section ref={ref} className="relative py-[3rem] lg:py-[6rem] w-full overflow-hidden">
       {/* Background Image */}
-      <Image src={img} alt="Banner" fill priority className="object-fill" />
+      <Image src={img} alt="Banner" fill priority className="object-cover" />
 
       {/* Gradient Overlay */}
       <div className="absolute inset-0 bg-gradient-to-r from-[#001845]/100 via-[#001845]/65 to-transparent" />

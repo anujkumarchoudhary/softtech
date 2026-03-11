@@ -16,13 +16,13 @@ const TakeTheTime = () => {
   const { heading, label, list, details } = staticData?.home.takeTheTime || {};
 
   return (
-    <section ref={ref} className="py-[6rem]">
+    <section ref={ref} className="py-[3rem] lg:py-[6rem]">
       <MaxWidth>
         {/* TOP ROW */}
-        <div className="flex justify-between">
+        <div className="block lg:flex justify-between">
           {/* HEADING */}
           <div
-            className={`w-[50%] transition-all duration-1000
+            className={`w-[100%] lg:w-[50%] transition-all duration-1000
             ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-12"}`}
           >
             <Heading heading={heading} label={label} />
@@ -30,7 +30,7 @@ const TakeTheTime = () => {
 
           {/* IMAGE */}
           <div
-            className={`relative w-[35%] h-[15rem] bg-yellow-200 p-2
+            className={`relative w-[100%] lg:w-[35%] h-[15rem] bg-yellow-200 p-2
             transition-all duration-1000 delay-200
             ${isVisible ? "opacity-100 translate-x-0" : "opacity-0 translate-x-12"}`}
           >
@@ -44,7 +44,7 @@ const TakeTheTime = () => {
         </div>
 
         {/* BOTTOM GRID */}
-        <div className="mt-10 grid grid-cols-3 gap-[4rem]">
+        <div className="mt-10 grid grid-cols-1 lg:grid-cols-3 gap-[1rem] lg:gap-[4rem]">
           {/* VIDEO CARD */}
           <div
             className={`relative transition-all duration-1000 delay-300

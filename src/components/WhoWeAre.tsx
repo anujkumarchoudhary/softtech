@@ -14,7 +14,7 @@ const WhoWeAre = () => {
 
   return (
     <section ref={ref} className="bg-[#F9F9F9]">
-      <MaxWidth className="grid grid-cols-3 gap-2 py-[6rem]">
+      <MaxWidth className="grid grid-cols-1 lg:grid-cols-3 gap-2 py-[6rem]">
         {/* LEFT CONTENT */}
         <div
           className={`col-span-2 my-auto transition-all duration-1000
@@ -22,7 +22,7 @@ const WhoWeAre = () => {
         >
           <Heading label={label} heading={heading} />
 
-          <div className="grid grid-cols-2 gap-[4rem]">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-[1rem] lg:gap-[4rem]">
             {/* Overview Card */}
             <div
               className={`space-y-5 bg-white p-[3rem] border-[0.4rem]

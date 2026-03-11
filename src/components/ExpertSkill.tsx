@@ -17,7 +17,7 @@ const ExpertSkill = () => {
 
   return (
     <section ref={ref} className="bg-[#F9F9F9]">
-      <MaxWidth className="grid grid-cols-4 gap-[4rem] py-[6rem]">
+      <MaxWidth className="grid grid-cols-1 lg:grid-cols-4 gap-[1rem] lg:gap-[4rem] py-[3rem] lg:py-[6rem]">
         {/* LEFT IMAGE */}
         <div
           className={`relative col-span-1 transition-all duration-1000
@@ -36,7 +36,7 @@ const ExpertSkill = () => {
             <Heading heading={heading} label={label} />
           </div>
 
-          <div className="grid grid-cols-3 gap-[4rem] mt-8">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-[1rem] lg:gap-[4rem]  mt-8">
             {/* INNER IMAGE */}
             <div
               className={`col-span-1 transition-all duration-1000 delay-300
@@ -45,7 +45,7 @@ const ExpertSkill = () => {
               <Image
                 src={skill2}
                 alt="Expert Skill"
-                className="w-full h-auto"
+                className="w-full h-[20rem] object-cover lg:h-auto"
               />
             </div>
 

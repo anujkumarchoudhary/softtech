@@ -9,7 +9,7 @@ import { PiCode } from "react-icons/pi";
 
 const OurVision = () => {
   return (
-    <div className="bg-[#F9F9F9] py-[6rem]">
+    <div className="bg-[#F9F9F9] py-[3rem] lg:py-[6rem]">
       <MaxWidth>
         <Heading
           heading={
@@ -18,7 +18,7 @@ const OurVision = () => {
           label={"Our Vission"}
           className="w-[75%]"
         />
-        <div className="grid grid-cols-2 gap-[4rem]">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-[1rem] lg:gap-[4rem]">
           <Image src={vision} alt="Vision" className="w-full h-auto" />
           <div className="my-auto">
             <p>

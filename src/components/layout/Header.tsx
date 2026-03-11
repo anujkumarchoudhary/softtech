@@ -21,7 +21,7 @@ const Header = () => {
             SoftTech
           </h2>
         </div>
-        <div>
+        <div className="hidden lg:block">
           {menuData?.map((menu, idx) => {
             return (
               <span
@@ -34,7 +34,7 @@ const Header = () => {
             );
           })}
         </div>
-        <div className="flex gap-8">
+        <div className="hidden lg:flex gap-8">
           <p className="cursor-pointer text-[#FFFFFF] font-bold my-auto">+91: 9953176985</p>
           <Button name="Get a Quote" />
         </div>

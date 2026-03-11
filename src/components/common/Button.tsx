@@ -14,7 +14,7 @@ const Button = ({
     <div className={`flex gap-2 ${className}`}>
       <div
         onClick={handleClick}
-        className={`bg-[#0466C8] ${widthClass} font-semibold uppercase text-[#FFFFFF] px-12 py-[0.85rem] cursor-pointer hover:scale-105 transition-transform`}
+        className={`bg-[#0466C8] text-center ${widthClass} font-semibold uppercase text-[#FFFFFF] px-12 py-[0.85rem] cursor-pointer hover:scale-105 transition-transform`}
       >
         {name}
       </div>

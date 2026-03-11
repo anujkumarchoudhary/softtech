@@ -8,7 +8,7 @@ import React from "react";
 const page = () => {
   return (
     <div>
-      <PageBanner heading={"Web Development"} description={""} />
+      <PageBanner heading={"Web Development"}/>
       <PointOfService />
       <WeCreate />
       <TeamWork />

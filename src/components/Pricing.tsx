@@ -14,7 +14,7 @@ const Pricing = () => {
   const { heading, label, data } = staticData?.home?.pricingPlan || {};
 
   return (
-    <section ref={ref} className="relative py-[6rem] w-full">
+    <section ref={ref} className="relative py-[3rem] lg:py-[6rem] w-full">
       {/* BACKGROUND IMAGE */}
       <Image src={img} alt="Banner" fill priority className="object-cover" />
 
@@ -38,7 +38,7 @@ const Pricing = () => {
         </div>
 
         {/* PRICE CARDS */}
-        <div className="grid grid-cols-3 pt-[2rem] gap-[2.5rem]">
+        <div className="grid grid-cols-1 lg:grid-cols-3 pt-[2rem] gap-[1.5rem] lg:gap-[2.5rem]">
           {data?.map((plan, index) => (
             <div
               key={index}

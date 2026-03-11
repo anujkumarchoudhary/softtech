@@ -8,11 +8,11 @@ export interface InputFieldProps {
 const InputField = ({ label, placeholder }: InputFieldProps) => {
   return (
     <div>
-      <span>{label}</span>
+      <span className="text-[#FFFFFF] font-semibold">{label}</span>
       <input
         type="text"
         placeholder={placeholder}
-        className="w-full p-3 outline-none border bg-[#FFFFFF] border-gray-300 rounded-md mt-2 focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+        className="w-full p-3 outline-none border bg-[#FFFFFF] border-gray-300 mt-2 focus:ring-2 focus:ring-blue-500 focus:border-transparent "
       />
     </div>
   );

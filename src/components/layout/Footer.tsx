@@ -9,7 +9,7 @@ import { IoIosArrowForward } from "react-icons/io";
 const Footer = () => {
   return (
     <div className="bg-[#001845]">
-      <MaxWidth className="grid grid-cols-4 gap-[2rem] py-[6rem] text-white">
+      <MaxWidth className="grid grid-cols-1 lg:grid-cols-4 gap-[2rem] py-[3rem] lg:py-[6rem] text-white">
         <div className="">
           <h2 className="text-[2rem] text-[#FFFFFF] font-bold">SoftTech</h2>
           <p className="text-[#FFFFFF]">
@@ -19,7 +19,7 @@ const Footer = () => {
         </div>
 
         <div className="col-span-2">
-          <div className="grid grid-cols-2 gap-x-20">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-20">
             {/* Left column */}
             <div className="space-y-2">
               <h2 className="text-[1.25rem] font-bold mb-4 text-[#FFFFFF]">
@@ -34,9 +34,9 @@ const Footer = () => {
             </div>
 
             {/* Right column */}
-            <div className="space-y-2">
+            <div className="space-y-2 pt-5 lg:pt-0">
               <h2 className="text-[1.25rem] font-bold mb-4 text-[#FFFFFF]">
-                Quick Link
+                Custom Software
               </h2>
               {footerMenuData.slice(5).map((menu, idx) => (
                 <div key={idx} className="flex gap-1 uppercase cursor-pointer">

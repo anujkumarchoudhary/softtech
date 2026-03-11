@@ -13,7 +13,7 @@ const BringYourIdea = () => {
   const { heading, label, description } = staticData.home?.bringIdea || {};
 
   return (
-    <section ref={ref} className="relative py-[6rem] w-full overflow-hidden">
+    <section ref={ref} className="relative py-[3rem] lg:py-[6rem] w-full overflow-hidden">
       {/* Background Image */}
       <Image src={img} alt="Banner" fill priority className="object-cover" />
 

@@ -99,6 +99,35 @@ export const staticData = {
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
           button: "Learn More",
         },
+
+                {
+          icon: "",
+          name: "Frontend Development",
+          description:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+          button: "Learn More",
+        },
+        {
+          icon: "",
+          name: "Backend Development",
+          description:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+          button: "Learn More",
+        },
+        {
+          icon: "",
+          name: "API Integration",
+          description:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+          button: "Learn More",
+        },
+        {
+          icon: "",
+          name: "HRMS Software",
+          description:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+          button: "Learn More",
+        },
       ],
     },
     bringIdea: {
@@ -235,17 +264,17 @@ export const staticData = {
     button: "Send Message",
     data: [
       {
-        icon: <FaMapLocationDot size={40} />,
+        icon: <FaMapLocationDot size={40} className="text-[#001845]" />,
         title: "Head Office Address",
         description: "Lumbung Hidup St. 42 East java Madiun Cituy 10000",
       },
       {
-        icon: <IoIosMailOpen size={40} />,
+        icon: <IoIosMailOpen size={40} className="text-[#001845]" />,
         title: "Email Address",
         description: "info@softtech.com",
       },
       {
-        icon: <FaHeadphonesSimple size={40} />,
+        icon: <FaHeadphonesSimple size={40} className="text-[#001845]" />,
         title: "Office Hour",
         description: "Monday - Friday, 9:00 AM - 6:00 PM",
       },

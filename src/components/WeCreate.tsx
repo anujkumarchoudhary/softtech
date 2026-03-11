@@ -12,7 +12,7 @@ const WeCreate = () => {
 
   return (
     <div className="bg-[#f9f9f9]">
-      <MaxWidth className="grid grid-cols-2 py-[6rem] gap-[4rem]">
+      <MaxWidth className="grid grid-cols-1 lg:grid-cols-2 py-[2.5rem] lg:py-[6rem] gap-[1rem] lg:gap-[4rem]">
         <div className="">
           <Heading heading={title} />
           {description?.map((desc: any) => {

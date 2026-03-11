@@ -11,7 +11,7 @@ const TeamWork = () => {
   const { title, description, list } = staticData?.serviceDetails?.teamWork;
 
   return (
-    <MaxWidth className="grid grid-cols-1 lg:grid-cols-2 gap-[4rem] py-[6rem]">
+    <MaxWidth className="grid grid-cols-1 lg:grid-cols-2 gap-[1rem] lg:gap-[4rem] py-[2.5rem] lg:py-[6rem]">
       <div className="relative">
         <Image
           src={img2}
@@ -20,7 +20,7 @@ const TeamWork = () => {
           className="object-cover"
         />
       </div>
-      <div className="py-12">
+      <div className="py-[4rem] lg:py-12">
         <Heading label="Dedicated Team Work" heading={title} />
         <div className="pb-8">
           {description?.map((desc: any) => {

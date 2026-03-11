@@ -20,7 +20,7 @@ const About = () => {
 
   return (
     <section ref={ref}>
-      <MaxWidth className="grid grid-cols-2 gap-[4rem] py-[6rem]">
+      <MaxWidth className="grid grid-cols-1 lg:grid-cols-2 gap-[4rem] py-[6rem]">
         {/* LEFT SIDE (Images) */}
         <div
           className={`relative transition-all duration-1000

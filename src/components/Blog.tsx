@@ -49,7 +49,7 @@ const Blog = () => {
   const { ref, isVisible } = useInViewOnce<HTMLDivElement>(0.3);
 
   return (
-    <section ref={ref} className="py-[6rem]">
+    <section ref={ref} className=" py-[3rem] lg:py-[6rem]">
       <MaxWidth>
         {/* HEADING */}
         <div
@@ -66,7 +66,7 @@ const Blog = () => {
         </div>
 
         {/* BLOG CARDS */}
-        <div className="grid grid-cols-3 gap-[2rem] mt-12">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-[1rem] lg:gap-[2rem] mt-12">
           {data.map((item, index) => (
             <div
               key={item.id}

@@ -12,22 +12,26 @@ import Pricing from "../components/Pricing";
 import DedicatedSupport from "../components/DedicatedSupport";
 import Feedback from "../components/Feedback";
 import Blog from "../components/Blog";
+import { staticData } from "@/src/utills/Data";
+
 //test
 const page = () => {
+  const { whatWeDo } = staticData.home || {};
+
   return (
     <div>
       <Banner />
-      <Client />
+      {/* <Client /> */}
       <About />
       <WhoWeAre />
-      <WhatWeDo />
+      <WhatWeDo data={whatWeDo} />
       <BringYourIdea />
       <ExpertSkill />
       <TakeTheTime />
       <Pricing />
       <DedicatedSupport />
-      <Feedback/>
-      <Blog/>
+      <Feedback />
+      <Blog />
     </div>
   );
 };

@@ -8,13 +8,13 @@ import React from "react";
 const Page = () => {
   const { label, heading, description, data } = staticData?.contact;
   return (
-    <MaxWidth className="py-16 grid grid-cols-1 lg:grid-cols-2 gap-[4rem]">
+    <MaxWidth className="py-16 grid grid-cols-1 lg:grid-cols-2 gap-[1rem] lg:gap-[4rem]">
       <div className="my-auto">
         <Heading heading={heading} label={label} description={description} />
         <div className="pt-[2rem]">
           {data?.map((item, idx: number) => {
             return (
-              <div className="flex gap-2 space-y-[2rem]">
+              <div key={idx} className="flex gap-4 space-y-[2rem]">
                 {item?.icon}
                 <span>
                   <h5>{item?.title}</h5>

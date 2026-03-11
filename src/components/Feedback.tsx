@@ -39,7 +39,7 @@ const Feedback = () => {
   const { heading, label, data } = staticData.home?.feedbacks || {};
 
   return (
-    <section ref={ref} className="py-[6rem] bg-[#F9F9F9]">
+    <section ref={ref} className="py-[2.5rem] py-[6rem] bg-[#F9F9F9]">
       <MaxWidth>
         {/* HEADING */}
         <div
@@ -55,7 +55,7 @@ const Feedback = () => {
         </div>
 
         {/* FEEDBACK CARDS */}
-        <div className="mt-[1rem] grid md:grid-cols-3 gap-8">
+        <div className="mt-[1rem] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-8">
           {data.map((item, index) => (
             <div
               key={index}

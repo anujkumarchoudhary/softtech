@@ -69,7 +69,7 @@ const page = () => {
   };
   return (
     <div>
-      <PageBanner heading={"Blog Details"} description={""} />
+      <PageBanner heading={"Blog Details"}/>
       <MaxWidth className="grid grid-cols-1 lg:grid-cols-3 gap-12 py-12">
         <div className="col-span-2">
           <p className="uppercase">Share Post :</p>

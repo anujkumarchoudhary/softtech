@@ -9,7 +9,7 @@ import React from "react";
 function page() {
   return (
     <div>
-      <PageBanner heading={"Pricing"} description={""} />
+      <PageBanner heading={"Pricing"} />
       <ExpertSkill />
       <Pricing />
       <DedicatedSupport />

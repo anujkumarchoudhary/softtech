@@ -5,12 +5,12 @@ import img from "../../../public/images/skill2.jpg";
 import MaxWidth from "../layout/MaxWidth";
 import Button from "./Button";
 import { useInViewOnce } from "@/src/hooks/useInViewOnce";
+import { MdKeyboardDoubleArrowRight } from "react-icons/md";
 
 export interface PageBannerProps {
   heading: string;
-  description: string;
 }
-const PageBanner = ({ heading, description }: PageBannerProps) => {
+const PageBanner = ({ heading }: PageBannerProps) => {
   const { ref, isVisible } = useInViewOnce<HTMLDivElement>(0.3);
 
   return (
@@ -24,7 +24,7 @@ const PageBanner = ({ heading, description }: PageBannerProps) => {
       {/* Content */}
       <MaxWidth className="relative z-10 h-full">
         <div className="flex h-full items-center">
-          <div className="max-w-3xl space-y-[2rem] text-white">
+          <div className="max-w-3xl space-y-[1.5rem] text-white">
             {/* Heading */}
             <h1
               className={`capitalize  text-[#FFFFFF]
@@ -33,7 +33,16 @@ const PageBanner = ({ heading, description }: PageBannerProps) => {
             >
               {heading}
             </h1>
-            <p className="uppercase font-bold">{`Home > ${heading}`}</p>
+            <p
+              className={`uppercase flex gap-1 my-auto font-bold text-[#FFFFFF] transition-all duration-700 delay-200 ${
+                isVisible
+                  ? "opacity-100 translate-y-0"
+                  : "opacity-0 translate-y-10"
+              }`}
+            >
+              Home <MdKeyboardDoubleArrowRight size={21} className="my-auto" />{" "}
+              {heading}
+            </p>
           </div>
         </div>
       </MaxWidth>

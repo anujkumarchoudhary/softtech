@@ -12,13 +12,13 @@ const PointOfService = () => {
   const { title, description, list } = staticData?.serviceDetails?.pointOfService;
 
   return (
-    <MaxWidth className="grid grid-cols-1 lg:grid-cols-3 gap-[4rem] py-[6rem]">
+    <MaxWidth className="grid grid-cols-1 lg:grid-cols-3 gap-[1rem] py-[2.5rem] lg:gap-[4rem] lg:py-[6rem]">
       <div className="relative">
         <Image src={img} fill alt="point of service" className="object-fill" />
       </div>
       <div className="col-span-2 py-12">
         <Heading heading={title} isButton={true} />
-        <div className="grid grid-cols-3 py-8 gap-[2rem]">
+        <div className="grid grid-cols-1 lg:grid-cols-3 py-4 lg:py-8 gap-[2rem]">
           <div className="col-span-2">
             {description?.map((desc: any) => {
               return <p className="my-4">{desc}</p>;

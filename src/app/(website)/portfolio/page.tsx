@@ -4,7 +4,7 @@ import LetsStart from "@/src/components/LetsStart";
 function page() {
   return (
     <div>
-      <PageBanner heading={"Our Blog"}/>
+      <PageBanner heading={"Our Portfolio"}/>
       <Blog />
       <LetsStart />
     </div>

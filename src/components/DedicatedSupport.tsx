@@ -16,8 +16,8 @@ const DedicatedSupport = () => {
   const { label, heading, data } = staticData.home.dedicatedSupport;
 
   return (
-    <section ref={ref} className="py-[6rem]">
-      <MaxWidth className="grid grid-cols-2 gap-[4rem]">
+    <section ref={ref} className="py-[3rem] lg:py-[6rem]">
+      <MaxWidth className="grid grid-cols-1 lg:grid-cols-2 gap-[1rem] lg:gap-[4rem]">
         {/* LEFT SIDE */}
         <div
           className={`transition-all duration-1000
@@ -55,7 +55,7 @@ const DedicatedSupport = () => {
 
           {/* SUPPORT BOX */}
           <div
-            className={`absolute w-full grid grid-cols-2 gap-[2rem]
+            className={`absolute w-full grid grid-cols-1 lg:grid-cols-2 gap-[2rem]
             top-[120%] left-[-25%] bg-[#001845] text-[#FFFFFF] p-[2rem]
             transition-all duration-1000 delay-650
             ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-12"}`}
