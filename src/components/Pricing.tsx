@@ -33,7 +33,7 @@ const Pricing = () => {
             isCenter
             heading={heading}
             label={label}
-            className="w-[55%] mx-auto mb-8"
+            className="w-[100%] lg:w-[55%] mx-auto mb-8"
           />
         </div>
 

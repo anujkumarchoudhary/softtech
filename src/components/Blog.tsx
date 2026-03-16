@@ -61,12 +61,12 @@ const Blog = () => {
             isCenter
             heading="Let's Read Our Blog Post Content & Writing Resource"
             label="Blog Content"
-            className="w-[60%] mx-auto"
+            className="w-[100%] lg:w-[60%] mx-auto"
           />
         </div>
 
         {/* BLOG CARDS */}
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-[1rem] lg:gap-[2rem] mt-12">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-[1rem] lg:gap-[2rem] mt-4 lg:mt-12">
           {data.map((item, index) => (
             <div
               key={item.id}

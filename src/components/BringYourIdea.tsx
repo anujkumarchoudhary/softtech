@@ -21,8 +21,8 @@ const BringYourIdea = () => {
       <div className="absolute inset-0 bg-gradient-to-r from-[#001845]/100 via-[#001845]/65 to-transparent" />
 
       {/* Content */}
-      <MaxWidth className="relative grid grid-cols-2 gap-[2rem] z-10 h-full">
-        <div className="flex h-full items-center">
+      <MaxWidth className="relative grid grid-cols-1 lg:grid-cols-2 gap-[2rem] z-10 h-full">
+        <div className="flex h-ful items-center">
           <Heading
             textColor="#FFFFFF"
             isHeadingH1={true}

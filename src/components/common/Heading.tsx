@@ -37,7 +37,7 @@ const Heading = ({
       </span>
       {isHeadingH1 ? (
         <h1
-          className={`capitalize leading-tight text-[${textColor || "#000000"}] ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"} ${
+          className={`capitalize leading-tight text-[${textColor || "#001845"}] ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"} ${
             isCenter ? "mx-auto flex justify-center text-center" : ""
           }`}
         >
@@ -45,7 +45,7 @@ const Heading = ({
         </h1>
       ) : (
         <h2
-          className={`capitalize text-[${textColor || "#000000"}] ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"} ${
+          className={`capitalize text-[${textColor || "#001845"}] ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"} ${
             isCenter ? "mx-auto flex justify-center text-center" : ""
           }`}
         >

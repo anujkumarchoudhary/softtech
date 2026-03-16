@@ -12,7 +12,7 @@ const Banner = () => {
   const { label, heading, description, button, button2 } = staticData?.home?.banner;
 
   return (
-    <section ref={ref} className="relative py-[3rem] lg:py-[6rem] w-full overflow-hidden">
+    <section ref={ref} className="relative py-[4rem] lg:py-[8rem] w-full overflow-hidden">
       {/* Background Image */}
       <Image src={img} alt="Banner" fill priority className="object-cover" />
 

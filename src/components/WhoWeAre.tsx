@@ -14,7 +14,7 @@ const WhoWeAre = () => {
 
   return (
     <section ref={ref} className="bg-[#F9F9F9]">
-      <MaxWidth className="grid grid-cols-1 lg:grid-cols-3 gap-2 py-[6rem]">
+      <MaxWidth className="grid grid-cols-1 lg:grid-cols-3 gap-2 py-[4rem] lg:py-[6rem]">
         {/* LEFT CONTENT */}
         <div
           className={`col-span-2 my-auto transition-all duration-1000
@@ -66,7 +66,7 @@ const WhoWeAre = () => {
           className={`col-span-1 transition-all duration-1000 delay-300
           ${isVisible ? "opacity-100 translate-x-0" : "opacity-0 translate-x-16"}`}
         >
-          <Image src={img} alt="Who we are" />
+          <Image src={img} alt="Who we are"  />
         </div>
       </MaxWidth>
     </section>

@@ -20,7 +20,7 @@ const About = () => {
 
   return (
     <section ref={ref}>
-      <MaxWidth className="grid grid-cols-1 lg:grid-cols-2 gap-[4rem] py-[6rem]">
+      <MaxWidth className="grid grid-cols-1 lg:grid-cols-2 gap-[4rem] py-[4rem] lg:py-[6rem]">
         {/* LEFT SIDE (Images) */}
         <div
           className={`relative transition-all duration-1000
@@ -31,7 +31,7 @@ const About = () => {
             height={600}
             src={about}
             alt="About"
-            className="pb-[8rem]"
+            className="pb-[8rem] aspect-550/600 w-[clamp(340px,40vw,550px)] h-[clamp(500px,60vw,800px)] object-cover"
           />
 
           <Image
@@ -39,7 +39,7 @@ const About = () => {
             height={400}
             src={about2}
             alt="About"
-            className="absolute bg-[#001845]/90 p-4 bottom-0 right-0"
+            className="absolute aspect-360/400 w-[clamp(230px,20vw,360px)] h-[clamp(40px,70vw,400px)] bg-[#001845]/90 p-4 bottom-0 right-0"
           />
 
           <div
@@ -49,7 +49,7 @@ const About = () => {
           >
             <SlSettings size={40} className="text-[#001845]" />
             <div>
-              <h3 className="text-[1.6rem] font-bold text-[#001845]">
+              <h3 className="font-bold text-[#001845]">
                 1,2K+ Project Done
               </h3>
               <p className="pt-1">Small Until High Projects</p>
@@ -84,7 +84,7 @@ const About = () => {
             </div>
           </div>
 
-          <div className="flex gap-[2rem] py-6">
+          <div className="block lg:flex gap-[2rem] py-6">
             {/* Users */}
             <div className="flex my-auto">
               {users.map((user, idx) => (
@@ -102,13 +102,15 @@ const About = () => {
               ))}
             </div>
 
-            <p className="text-5xl font-extrabold text-[#001845]">1,235 +</p>
+            <div className="flex gap-4 pt-8 lg:pt-0">
+              <h2 className="font-extrabold text-[#001845]">1,235+</h2>
 
-            <div className="my-auto">
-              <h3 className="text-[1.25rem] font-bold text-[#001845]">
-                Give Best Feedback
-              </h3>
-              <p className="font-semibold italic">Lorem Ipsum Dolor</p>
+              <div className="my-auto">
+                <h3 className="text-[1.25rem] font-bold text-[#001845]">
+                  Give Best Feedback
+                </h3>
+                <p className="font-semibold italic">Lorem Ipsum Dolor</p>
+              </div>
             </div>
           </div>
         </div>

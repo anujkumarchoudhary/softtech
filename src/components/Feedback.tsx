@@ -39,7 +39,7 @@ const Feedback = () => {
   const { heading, label, data } = staticData.home?.feedbacks || {};
 
   return (
-    <section ref={ref} className="py-[2.5rem] py-[6rem] bg-[#F9F9F9]">
+    <section ref={ref} className="py-[2rem] py-[6rem] bg-[#F9F9F9]">
       <MaxWidth>
         {/* HEADING */}
         <div
@@ -50,7 +50,7 @@ const Feedback = () => {
             isCenter
             heading={heading}
             label={label}
-            className="w-[60%] mx-auto"
+            className="w-[100%] lg:w-[60%] mx-auto"
           />
         </div>
 
