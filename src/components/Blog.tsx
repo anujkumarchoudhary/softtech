@@ -73,7 +73,7 @@ const Blog = () => {
               style={{
                 transitionDelay: `${index * 300}ms`, // stagger: first, second, third
               }}
-              className={`relative mt-10 bg-[#001845] text-white rounded-xl overflow-hidden shadow-lg
+              className={`relative mt-0 lg:mt-10 bg-[#001845] text-white rounded-xl overflow-hidden shadow-lg
               transition-all duration-700 ease-out
               ${
                 isVisible
@@ -87,7 +87,7 @@ const Blog = () => {
                   <Image
                     src={item.image}
                     alt={item.title}
-                    className="w-full h-[20rem] object-cover"
+                    className="w-full h-[15rem] lg:h-[20rem] object-cover"
                   />
                 )}
 
@@ -108,7 +108,7 @@ const Blog = () => {
               </div>
 
               {/* CONTENT */}
-              <div className="px-[2.5rem] pt-[2rem] pb-[2.5rem]">
+              <div className="px-[1.5rem] lg:px-[2.5rem] py-[1.25rem] lg:py-[2rem]">
                 <h4 className="text-[#FFFFFF] mt-2">{item.title}</h4>
                 <p className="my-4 text-[#FFFFFF]">{item.description}</p>
                 <Button

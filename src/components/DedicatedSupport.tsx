@@ -16,8 +16,11 @@ const DedicatedSupport = () => {
   const { label, heading, data } = staticData.home.dedicatedSupport;
 
   return (
-    <section ref={ref} className="pt-[3rem] pb-[18rem] bg-white lg:pt-[6rem] lg:pb-[6rem]">
-      <MaxWidth className="grid grid-cols-1 lg:grid-cols-2 gap-[1rem] lg:gap-[4rem]">
+    <section
+      ref={ref}
+      className="pt-[3rem] pb-[18rem] bg-white lg:pt-[6rem] lg:pb-[6rem]"
+    >
+      <MaxWidth className="grid grid-cols-1 overflow-hidden lg:grid-cols-2 gap-[1rem] lg:gap-[4rem]">
         {/* LEFT SIDE */}
         <div
           className={`transition-all duration-1000

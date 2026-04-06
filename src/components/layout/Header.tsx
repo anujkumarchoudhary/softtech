@@ -47,7 +47,7 @@ const Header = () => {
           size={35}
           className="block lg:hidden cursor-pointer"
         />
-        {open && (
+        {/* {open && (
           <div className="absolute top-[70px] h-[100vh] left-0 w-full bg-white shadow-lg flex flex-col items-left p-6 gap-4 lg:hidden z-50">
             {menuData?.map((menu, idx) => {
               return (
@@ -64,7 +64,7 @@ const Header = () => {
               );
             })}
           </div>
-        )}
+        )} */}
       </MaxWidth>
     </div>
   );

@@ -19,7 +19,7 @@ const TakeTheTime = () => {
     <section ref={ref} className="py-[3rem] lg:py-[6rem]">
       <MaxWidth>
         {/* TOP ROW */}
-        <div className="block lg:flex justify-between">
+        <div className="block overflow-hidden lg:flex justify-between">
           {/* HEADING */}
           <div
             className={`w-[100%] lg:w-[50%] transition-all duration-1000
@@ -52,8 +52,8 @@ const TakeTheTime = () => {
           >
             <Image src={img2} alt="Take the time" fill />
             <span
-              className="absolute top-1/2 left-1/2 transform
-              -translate-x-1/2 -translate-y-1/2
+              className="absolute top-1/1 left-1/2 transform
+              -translate-x-1/2 -translate-y-1/1
               bg-[#FFFFFF] text-[#001845]
               hover:bg-[#001845] hover:text-[#FFFFFF]
               cursor-pointer transition-all p-5 rounded-full"
