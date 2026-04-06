@@ -14,7 +14,7 @@ const PageBanner = ({ heading }: PageBannerProps) => {
   const { ref, isVisible } = useInViewOnce<HTMLDivElement>(0.3);
 
   return (
-    <section ref={ref} className="relative h-[45vh] w-full overflow-hidden">
+    <section ref={ref} className="relative h-[26vh] lg:h-[45vh] w-full overflow-hidden">
       {/* Background Image */}
       <Image src={img} alt="Banner" fill priority className="object-cover" />
 
@@ -34,7 +34,7 @@ const PageBanner = ({ heading }: PageBannerProps) => {
               {heading}
             </h1>
             <p
-              className={`uppercase flex gap-1 my-auto font-bold text-[#FFFFFF] transition-all duration-700 delay-200 ${
+              className={`uppercase text-[14px] lg:text-[16px] flex gap-1 my-auto font-bold text-[#FFFFFF] transition-all duration-700 delay-200 ${
                 isVisible
                   ? "opacity-100 translate-y-0"
                   : "opacity-0 translate-y-10"

@@ -87,7 +87,7 @@ const page = () => {
               className="bg-[#0466C8] p-2.5 text-[#FFFFFF]"
             />
           </div>
-          <div className="relative w-full h-[400px]">
+          <div className="relative w-full h-[200px] lg:h-[400px]">
             <Image
               src={blogBanner}
               fill
@@ -95,7 +95,7 @@ const page = () => {
               className="object-cover"
             />
           </div>
-          <h1 className="text-3xl font-bold my-8">
+          <h1 className="font-bold my-8">
             The Ultimate Guide to Web Development in 2024
           </h1>
           {blogData?.description?.map((para, index) => (
